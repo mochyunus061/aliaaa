@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Romantis</title>
+    <style>
+        body {
+            background-color: #f8f8f8;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            color: pink;
+            font-size: 36px;
+        }
+        
+        p {
+            color: #333333;
+            font-size: 18px;
+        }
+        
+        #love-letter {
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        #love-letter textarea {
+            width: 100%;
+            height: 200px;
+            border: 1px solid #dddddd;
+            padding: 10px;
+            font-size: 16px;
+        }
+        
+        #love-letter button {
+            background-color: #ff69b4;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>from mr y to mrs a </h1>
+    <div id="love-letter">
+        <p>ada pesan untuk kamu:</p>
+        <h3 id="message">halo aliaaa</h3>
+        <h4 id="message">jangan takut lagi yaa, aku gak bakalan pergi kemana pun kok, mungkin emang butuh waktu buat kamu, tapi tenang aja aku bakalan nunggu kamu sampe udah gak takut lagi, haha alay ya bikin beginian tapi aku gak peduli sii wleee, akuu sayang kamu, love you bubb</h4>
+    </div>
+    
+    <script>
+        function showLoveMessage() {
+            var message = document.getElementById("message").value;
+            alert("Pesan cintamu:\n\n" + message);
+            document.getElementById("message").disabled = true; // Menonaktifkan textarea setelah pesan dikirim
+        }
+    </script>
+</body>
+</html>
